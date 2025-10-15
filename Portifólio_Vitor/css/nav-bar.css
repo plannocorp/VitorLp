@@ -1,0 +1,82 @@
+header {
+    background-color: rgb(10, 2, 20);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    position: fixed; /* Mudado de sticky para fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease; /* Adicionada transição para animação suave */
+}
+
+/* Classe para esconder o header quando rolar para baixo */
+header.hidden {
+    transform: translateY(-100%);
+}
+
+.titles {
+    transition: all ease 0.5s;
+}
+
+.titles:hover {
+    scale: 1.1;
+}
+
+.titles:hover .logo1,
+.titles:hover .logo2 {
+    color: rgb(113, 78, 255);
+    text-shadow: 0 0 8px rgba(113, 78, 255, 0.4), 
+                 0 0 12px rgba(113, 78, 255, 0.2);
+}
+
+.logo1 {
+    color: rgb(113, 78, 255);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.logo2 {
+    color: white;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.logo2:hover {
+    color: rgb(113, 78, 255);
+}
+
+.nav-bar a {
+    position: relative;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 100px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    transition: all ease 0.5s;
+    display: inline-block;  
+}
+
+.nav-bar a:hover {
+    color: rgb(113, 78, 255);
+    transform: translate(0, -8px);
+}
+
+/* Suavização da rolagem para navegação */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adicionar espaço para o header fixo */
+body {
+    padding-top: 200px; /* Altura do header */
+}
