@@ -3,6 +3,10 @@ main {
     padding: 30px 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 
@@ -323,10 +327,10 @@ main {
 
 .section-3 .main-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     position: relative;
     z-index: 1;
 }
@@ -712,6 +716,14 @@ main {
     margin: 0 auto;
 }
 
+.section-5 .main-container a {
+    text-decoration: none;
+}
+
+.section-5 .main-container a:active {
+    text-decoration: none;
+}
+
 .section-5 .card {
     display: flex;
     flex-direction: column;
@@ -794,33 +806,42 @@ main {
     transform: scale(1.1);
 }
 
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    .section-5 {
-        padding: 50px 5% 60px;
+/* Adicione estas regras ao final do arquivo */
+@media screen and (max-width: 768px) {
+    .section-1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        margin-top: 0;
     }
     
-    .section-5 .main-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        max-width: 280px;
+    .section-1 .left-container {
+        order: 2;
+        margin-top: 20px;
     }
     
-    .section-5 .card {
-        height: 150px;
+    .section-1 .right-container {
+        order: 1;
+        width: 250px !important;
+        height: 250px !important;
+        margin-bottom: 20px;
     }
     
-    .section-5 .card-icon {
-        width: 60px;
-        height: 60px;
+    .section-1 .high-main-subtitle {
+        font-size: 22px !important;
     }
     
-    .section-5 .card-icon i {
-        font-size: 28px;
+    .section-1 .main-title {
+        font-size: 32px !important;
     }
     
-    .section-5 .card-title {
-        font-size: 16px;
+    .section-1 .bottom-main-subtitle {
+        font-size: 16px !important;
+    }
+    
+    .section-1 .contact-icons {
+        justify-content: center;
+        margin-bottom: 50px;
     }
 }
 

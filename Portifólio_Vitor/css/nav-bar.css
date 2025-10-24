@@ -5,18 +5,13 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 200px;
-    position: fixed; /* Mudado de sticky para fixed */
+    position: relative; /* Mudado de relative para fixed */
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.4s ease; /* Adicionada transição para animação suave */
-}
-
-/* Classe para esconder o header quando rolar para baixo */
-header.hidden {
-    transform: translateY(-100%);
+    transition: transform 0.4s ease;
 }
 
 .titles {
@@ -27,31 +22,18 @@ header.hidden {
     scale: 1.1;
 }
 
-.titles:hover .logo1,
-.titles:hover .logo2 {
+.titles:hover .logo {
     color: rgb(113, 78, 255);
     text-shadow: 0 0 8px rgba(113, 78, 255, 0.4), 
                  0 0 12px rgba(113, 78, 255, 0.2);
 }
 
-.logo1 {
+.logo {
     color: rgb(113, 78, 255);
-    font-size: 40px;
+    font-size: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
     transition: all ease 0.5s;
-}
-
-.logo2 {
-    color: white;
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: pointer;
-    transition: all ease 0.5s;
-}
-
-.logo2:hover {
-    color: rgb(113, 78, 255);
 }
 
 .nav-bar a {
@@ -76,7 +58,94 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Adicionar espaço para o header fixo */
-body {
-    padding-top: 200px; /* Altura do header */
+.mobile-menu-icon {
+    display: none;
+}
+
+.menu-bar {
+    position: fixed;
+    top: 200px; /* Posiciona o menu logo abaixo do header */
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 2, 20, 0.95);
+    display: none;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu-bar.open {
+    display: block;
+}
+
+.menu-bar .mobile-nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar .mobile-nav-links li {
+    width: 100%;
+}
+
+.menu-bar .mobile-nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(113, 78, 255, 0.2);
+}
+
+.menu-bar .mobile-nav-links li:last-child a {
+    border-bottom: none;
+}
+
+.menu-bar .mobile-nav-links a:hover {
+    color: rgb(113, 78, 255);
+    background-color: rgba(113, 78, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 20px;
+        justify-content: space-around;
+        height: 120px; /* Reduzir a altura do header em dispositivos móveis */
+    }
+    
+    .menu-bar {
+        top: 120px; /* Ajustar a posição do menu para a nova altura do header */
+    }
+    
+    .logo {
+        font-size: 50px; /* Reduzir o tamanho do logo em dispositivos móveis */
+    }
+    
+    .nav-bar a {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+        color: rgb(113, 78, 255);
+        font-size: 50px;
+        transition: all 0.3s ease;
+    }
+    
+    .mobile-menu-icon:hover {
+        color: white;
+    }
+    
+    /* Corrigir o espaço em branco na seção 1 */
+    .section-1 {
+        margin-top: 0;
+        min-height: calc(100vh - 120px);
+    }
 }

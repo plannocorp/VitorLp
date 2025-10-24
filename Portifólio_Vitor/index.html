@@ -14,8 +14,7 @@
 <body>
     <header>
         <div class="titles">
-            <h1 class="logo1">Vitor</h1>
-            <h1 class="logo2">Teixeira</h1>
+            <h1 class="logo"><i class="fas fa-code"></i></h1>
         </div>
 
         <div class="nav-bar">
@@ -23,7 +22,21 @@
             <a href="#quem-sou">Quem sou</a>
             <a href="#habilidades">Minhas Habilidades</a>
             <a href="#curriculo">Currículo</a>
-            <a href="">Contato</a>
+            <a href="#contato">Contato</a>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <i onclick="menuShow()" class="fas fa-list"></i>
+        </div>
+
+        <div class="menu-bar">
+            <ul class="mobile-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quem-sou">Quem sou</a></li>
+                <li><a href="#habilidades">Minhas Habilidades</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </div>
     </header>
 
@@ -37,10 +50,10 @@
                 <p class="bottom-main-subtitle">Desenvolvedor <span class="language">HTML</span> | <span class="language">CSS</span> | <span class="language">PHP</span> | <span class="language">C#</span> | <span class="language">.NET 8 e 9</span></p>
                 
                 <div class="contact-icons">
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a target="_blank" href="https://github.com/PlannoVitorDev"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/emi.vxr/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://wa.me/5562996958744"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
 
@@ -103,7 +116,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star inactive"></i>
                         <i class="fas fa-star inactive"></i>
                     </div>
                 </div>
@@ -144,20 +157,56 @@
                     </div>
                 </div>
 
-                <div class="card"> <!-- .NET -->
+                <div class="card"> <!-- React -->
                     <div class="card-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fab fa-react"></i>
                     </div>
 
-                    <h3 class="card-title">.NET Framework</h3>
+                    <h3 class="card-title">React</h3>
 
-                    <p class="card-description">Desenvolvimento de aplicações empresariais escaláveis usando o ecossistema .NET e suas ferramentas.</p>
+                    <p class="card-description">Construção de interfaces de usuário modernas e componentizadas, criação de aplicações web interativas com alta performance e reutilização de código.</p>
 
                     <div class="skill-level">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
+                        <i class="fas fa-star inactive"></i>
+                        <i class="fas fa-star inactive"></i>
+                    </div>
+                </div>
+
+                <div class="card"> <!-- Node -->
+                    <div class="card-icon">
+                        <i class="fab fa-node"></i>
+                    </div>
+
+                    <h3 class="card-title">Node</h3>
+
+                    <p class="card-description">Desenvolvimento de servidores e APIs escaláveis, construção de aplicações em tempo real e microsserviços utilizando JavaScript no back-end.</p>
+
+                    <div class="skill-level">
                         <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star inactive"></i>
+                        <i class="fas fa-star inactive"></i>
+                    </div>
+                </div>
+
+                <div class="card"> <!-- .NET -->
+                    <div class="card-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+
+                    <h3 class="card-title">Python</h3>
+
+                    <p class="card-description">Desenvolvimento versátil para web, automação, ciência de dados e inteligência artificial com sintaxe clara e extensa biblioteca de recursos.</p>
+
+                    <div class="skill-level">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star inactive"></i>
                         <i class="fas fa-star inactive"></i>
                     </div>
                 </div>
@@ -183,33 +232,36 @@
             </div>
         </section>
 
-        <section class="section-5">
+        <section id="contato" class="section-5">
             <h1 class="main-title">Contato</h1>
 
             <div class="main-container">
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fab fa-whatsapp"></i>
+                <a target="_blank" href="https://wa.me/5562996958744">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="card-title">Whatsapp</h3>
                     </div>
+                </a>
 
-                    <h3 class="card-title">Whatsapp</h3>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fab fa-instagram"></i>
+                <a target="_blank" href="https://www.instagram.com/emi.vxr/">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3 class="card-title">Instagram</h3>
                     </div>
+                </a>
 
-                    <h3 class="card-title">Instagram</h3>
-                </div>
-
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fab fa-github"></i>
+                <a target="_blank" href="https://github.com/PlannoVitorDev">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3 class="card-title">Github</h3>
                     </div>
-
-                    <h3 class="card-title">Github</h3>
-                </div>
+                </a>
 
                 <div class="card">
                     <div class="card-icon">
@@ -234,14 +286,14 @@
                 <a href="#quem-sou">Quem sou</a>
                 <a href="#habilidades">Minhas Habilidades</a>
                 <a href="#curriculo">Currículo</a>
-                <a href="">Contato</a>
+                <a href="#contato">Contato</a>
             </div>
             
             <div class="social-media">
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://github.com/PlannoVitorDev"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a target="_blank" href="https://www.instagram.com/emi.vxr/"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://wa.me/5562996958744"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
         
@@ -254,5 +306,6 @@
     <script src="scripts/navigation.js"></script>
     <script src="scripts/animations.js"></script>
     <script src="scripts/resume.js"></script>
+    <script src="Scripts/menu-bar.js"></script>
 </body>
 </html>
