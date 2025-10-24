@@ -22,17 +22,10 @@ footer {
     align-items: center;
 }
 
-.footer-logo h2:first-child {
+.footer-logo i {
     color: rgb(113, 78, 255);
-    font-size: 28px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-right: 5px;
-}
-
-.footer-logo h2:last-child {
-    color: white;
-    font-size: 28px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 .footer-links {

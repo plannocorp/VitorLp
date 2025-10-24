@@ -6,11 +6,11 @@ function menuShow() {
         menuMobile.classList.remove('open');
         // Alterar o ícone para lista quando o menu está fechado
         menuIcon.classList.remove('fa-times');
-        menuIcon.classList.add('fa-list');
+        menuIcon.classList.add('fa-bars');
     } else {
         menuMobile.classList.add('open');
         // Alterar o ícone para X quando o menu está aberto
-        menuIcon.classList.remove('fa-list');
+        menuIcon.classList.remove('fa-bars');
         menuIcon.classList.add('fa-times');
     }
 }
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (menuMobile.classList.contains('open')) {
                 menuMobile.classList.remove('open');
                 menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-list');
+                menuIcon.classList.add('fa-bars');
             }
         });
     });
