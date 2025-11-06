@@ -807,7 +807,7 @@ a {
 }
 
 /* Adicione estas regras ao final do arquivo */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1268px) {
     .section-1 {
         flex-direction: column;
         text-align: center;
@@ -842,6 +842,10 @@ a {
     .section-1 .contact-icons {
         justify-content: center;
         margin-bottom: 50px;
+    }
+
+    .section-1 .scroll-down-btn {
+        display: none;
     }
 }
 
