@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     menuLinks.forEach(link => {
         link.addEventListener('click', function() {
             let menuMobile = document.querySelector('.menu-bar');
-            let menuIcon = document.querySelector('.mobile-menu-icon i');
+            let menuIcon = document.querySelector('.menu-icon');
             
             if (menuMobile.classList.contains('open')) {
                 menuMobile.classList.remove('open');

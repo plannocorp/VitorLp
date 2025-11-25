@@ -260,6 +260,35 @@ main {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .home {
+        width: 95vw;
+        padding: 30px 0;
+    }
+    
+    .home .img-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .home .main-uppertitle {
+        font-size: 28px;
+    }
+    
+    .home .main-title {
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    
+    .home .main-subtitle {
+        font-size: 22px;
+    }
+    
+    .home .rotate-logo {
+        font-size: 80px;
+    }
+}
+
 
 
 
@@ -721,27 +750,55 @@ main {
     
     .contato .container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        gap: 40px; /* Ajustando o gap */
         width: 90%;
-        max-width: 600px;
+        max-width: 400px; /* Ajustando para telas menores */
     }
     
     .contato .container .card {
-        padding: 20px;
+        width: 80px; /* Menor para telas médias */
+        height: 80px;
     }
     
     .contato .container .card i {
-        font-size: 80px;
+        font-size: 50px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .contato .container {
+        grid-template-columns: repeat(2, 1fr); /* Mantendo 2 colunas */
         gap: 30px;
-        width: 60%;
+        width: 90%;
+        max-width: 300px; /* Ainda menor para telas pequenas */
     }
     
     .contato .container .card {
-        padding: 15px;
+        width: 70px; /* Ainda menor para telas pequenas */
+        height: 70px;
+        padding: 10px;
+    }
+    
+    .contato .container .card i {
+        font-size: 40px;
+    }
+}
+
+/* Para telas muito pequenas */
+@media screen and (max-width: 320px) {
+    .contato .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 95%;
+    }
+    
+    .contato .container .card {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
+    
+    .contato .container .card i {
+        font-size: 35px;
     }
 }

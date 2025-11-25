@@ -88,8 +88,34 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
+    header {
+        padding: 0 30px; 
+    }
+    
+    .logo {
+        font-size: 60px; 
+    }
+    
+    .menu-icon {
+        font-size: 60px; 
+    }
+    
     .menu-bar li a {
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 0 20px;
+    }
+    
+    .logo {
+        font-size: 45px;
+    }
+    
+    .menu-icon {
+        font-size: 45px;
     }
 }
 
