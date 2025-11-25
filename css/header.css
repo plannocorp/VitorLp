@@ -1,0 +1,113 @@
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--corfundo);
+    min-height: 15vh;
+    padding: 0 100px;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 80px;
+    cursor: pointer;
+    color: var(--corbase);
+    transition: all 0.6s ease;
+}
+
+.logo:hover {
+    scale: 1.2;
+    text-shadow: 0 0 8px var(--corbase);
+}
+
+.menu-icon {
+    font-size: 50px;
+    color: var(--corbase);
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.menu-icon:hover {
+    text-shadow: 0 0 8px var(--corbase);
+}
+
+.menu-bar {
+    display: none;
+    width: 100%;
+    background-color: var(--corfundo);
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    animation: autoShow 0.5s ease;
+}
+
+.menu-bar li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    height: 85vh;
+    animation: autoShow 1s ease;
+}
+
+.menu-bar li a {
+    position: relative;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 35px;
+    transition: all 0.6s ease;
+}
+
+.menu-bar li a:hover {
+    transform: translate(0, -8px);
+    color: var(--corbase);
+}
+
+.menu-bar li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    top: 110%;
+    transform: translateX(-50%);
+    background-color: var(--corbase);
+    transition: all 0.6s ease;
+}
+
+.menu-bar li a:hover::after {
+    width: 80%;
+}
+
+.open {
+    display: block;
+    position: absolute;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-bar li a {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+/* Animations */
+
+@keyframes autoShow {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
