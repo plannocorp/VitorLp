@@ -471,6 +471,10 @@ main {
     color: var(--darkcorbase);
 }
 
+.habilidades .invertido {
+    flex-direction: row-reverse;
+}
+
 @media screen and (max-width: 1200px) {
     .habilidades {
         gap: 200px;
@@ -488,7 +492,7 @@ main {
     }
 
     .habilidades .invertido {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
     .habilidades .icon-box {
