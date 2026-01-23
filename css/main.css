@@ -475,6 +475,29 @@ main {
     flex-direction: row-reverse;
 }
 
+.ts-icon {
+    color: var(--corbase); /* Cor oficial do TypeScript */
+    font-size: 200px;
+    transition: all 0.6s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+    
+.ts-icon:hover {
+    scale: 1.2;
+    cursor: pointer;
+    text-shadow: 0 0 10px var(--corbase);
+}
+    
+@media screen and (max-width: 1200px) {
+    .ts-icon {
+        font-size: 150px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .habilidades {
         gap: 200px;
