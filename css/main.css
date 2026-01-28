@@ -159,47 +159,47 @@ main {
         opacity: 0;
     }
     39.01% {
-        content: 'JavaScript';
+        content: 'TypeScript';
         transform: rotateX(90deg);
         opacity: 0;
     }
     40%, 56% {
-        content: 'JavaScript';
+        content: 'TypeScript';
         transform: rotateX(0deg);
         opacity: 1;
     }
     57%, 59% {
-        content: 'JavaScript';
+        content: 'TypeScript';
         transform: rotateX(90deg);
         opacity: 0;
     }
     59.01% {
-        content: 'React';
+        content: 'Angular';
         transform: rotateX(90deg);
         opacity: 0;
     }
     60%, 76% {
-        content: 'React';
+        content: 'Angular';
         transform: rotateX(0deg);
         opacity: 1;
     }
     77%, 79% {
-        content: 'React';
+        content: 'Angular';
         transform: rotateX(90deg);
         opacity: 0;
     }
     79.01% {
-        content: 'Node';
+        content: 'Java';
         transform: rotateX(90deg);
         opacity: 0;
     }
     80%, 96% {
-        content: 'Node';
+        content: 'Java';
         transform: rotateX(0deg);
         opacity: 1;
     }
     97%, 99% {
-        content: 'Node';
+        content: 'Java';
         transform: rotateX(90deg);
         opacity: 0;
     }
@@ -414,6 +414,7 @@ main {
     width: 3px;
     height: 90%;
     background-color: var(--corbase);
+    border-radius: 5px;
 }
 
 .habilidades .container {
