@@ -370,6 +370,10 @@ main {
     font-size: 20px;
 }
 
+.sobre-mim .main-text a {
+    color: var(--corfundoclaro);
+}
+
 @media screen and (max-width: 1200px) {
     .sobre-mim {
         width: 90vw;
