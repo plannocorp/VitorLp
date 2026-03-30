@@ -387,8 +387,9 @@ main {
     }
     
     .sobre-mim .main-text {
-        width: 80%;
-        font-size: 18px;
+        width: 85%;
+        font-size: 16px;
+        text-align: justify;
     }
 }
 
